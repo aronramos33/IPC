@@ -3,4 +3,4 @@
 
  22/12/2022 -> Creación definitiva del proyecto de prácticas.
 
-hola mundo! feliz navidad
+26/12/2022 -> Diseño de la página principal del proyex+cto.
