@@ -12,11 +12,6 @@ and open the template in the editor.
     -fx-background-color: linear-gradient(from 25% 25% to 90% 90%, #35f2f2, #bcdd78);
 }
 
-#fondoPrincipal{
-    -fx-background-image: url("C:\Users\aronr\Documents\GitHub\IPC\zIPC-TrabajoFinal\src\icons\fondo principal.png");
-    -fx-opacity: 0.2; 
-}
-
 #botonInicioSesion{
     -fx-background-color: black;
     -fx-border-color: white;
