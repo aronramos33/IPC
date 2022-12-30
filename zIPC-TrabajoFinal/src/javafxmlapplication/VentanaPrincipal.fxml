@@ -34,7 +34,7 @@
             <HBox alignment="CENTER_RIGHT" spacing="15.0" styleClass="hboxHeader">
                <children>
                   <Label id="labelTop" focusTraversable="false" layoutX="699.0" layoutY="39.0" text="¿No tienes cuenta?" />
-                  <Button id="botonRegistrarse" fx:id="registrarseBoton" mnemonicParsing="false" prefHeight="35.0" text="Registrarse">
+                  <Button id="botonRegistrarse" fx:id="registrarseBoton" mnemonicParsing="false" onAction="#registrarse" prefHeight="35.0" text="Registrarse">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>

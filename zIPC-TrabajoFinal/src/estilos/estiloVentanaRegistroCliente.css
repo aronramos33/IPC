@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 dic. 2022, 12:41:45
+    Author     : aronr
+*/
+
+#titulo{
+    -fx-font-family: Verdana;
+    -fx-font-size: 34;
+    -fx-font-weight: Bold;
+}
+
+.fondo{
+    -fx-background-color: linear-gradient(from 25% 25% to 90% 90%, #35f2f2, #bcdd78);
+}
+
+.label{
+    -fx-font-family: Verdana;
+    -fx-font-size: 14;
+}
+
+#botonRegistrarse{
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-family: Verdana;
+    -fx-font-weight: Bold;
+}
+
+#botonCancelar{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-family: Verdana;
+    -fx-font-weight: Bold;
+}
+
+#label1{
+    -fx-font-family: Verdana;
+    -fx-font-size: 16;
+    -fx-font-weight: Bold;
+}
+
+#label2{
+    -fx-font-family: Verdana;
+    -fx-font-size: 16;
+    -fx-font-weight: Bold;
+}
+
+#label3{
+    -fx-font-family: Verdana;
+    -fx-font-size: 16;
+    -fx-font-weight: Bold;
+}

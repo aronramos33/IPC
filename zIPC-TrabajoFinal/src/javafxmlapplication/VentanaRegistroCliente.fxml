@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" stylesheets="@../estilos/estiloVentanaRegistroCliente.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.VentanaRegistroClienteController">
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="botonCancelar" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" text="Cancelar" />
+            <Button id="botonRegistrarse" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Registrar">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="284.0" prefWidth="266.0">
+               <children>
+                  <Label id="label2" text="DATOS DE CLIENTE" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Nombre de Usuario" />
+                  <TextField maxWidth="125.0" promptText="jgarcia" />
+                  <Label text="Correo Electrónico">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField promptText="correo@dominio.com" />
+                  <Label text="Contraseña">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="284.0" prefWidth="266.0">
+               <children>
+                  <Label id="label1" text="DATOS DE ENTREGA" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Dirección" />
+                  <TextField promptText="C/Avenida de Ejemplo" />
+                  <Label text="Número de la dirección">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField maxWidth="45.0" promptText="xxx" />
+                  <Label text="Código Postal">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField maxWidth="50.0" promptText="00000" />
+                  <Label text="Teléfono de contacto">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField maxWidth="80.0" promptText="000 000 000" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="284.0" prefWidth="266.0">
+               <children>
+                  <Label id="label3" text="DATOS BANCARIOS" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Número de la tajeta" />
+                  <TextField maxWidth="186.0" prefHeight="26.0" prefWidth="186.0" promptText="xxxx xxxx xxxx xxxx" />
+                  <Label text="Fecha de Validez">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker />
+                  <Label text="Contraseña">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="800.0" styleClass="fondo" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="titulo" text="REGISTRO" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
