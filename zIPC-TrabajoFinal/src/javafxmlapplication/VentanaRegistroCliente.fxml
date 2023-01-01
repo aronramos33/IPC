@@ -125,7 +125,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </Label>
-                  <PasswordField fx:id="cvvTarjeta" maxWidth="50.0" />
+                  <PasswordField fx:id="cvvTarjeta" maxWidth="50.0" promptText="123" />
                   <Label fx:id="cvvLabel" text="Label" visible="false" />
                </children>
                <padding>

@@ -53,5 +53,18 @@ public class VentanaPrincipalController implements Initializable {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }
+
+    @FXML
+    private void inicioDeSesion(ActionEvent event) throws IOException {
+        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaIniciarSesion.fxml"));
+        Parent root = miCargador.load();
+        
+        Scene scene = new Scene(root, 800, 450);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Inicio de Sesión");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
+    }
     
 }
