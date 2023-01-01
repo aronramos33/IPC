@@ -43,7 +43,7 @@ public class VentanaPrincipalController implements Initializable {
 
     @FXML
     private void registrarse(ActionEvent event) throws IOException {
-        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaRegistroCliente.fxml"));
+        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaEleccionRegistro.fxml"));
         Parent root = miCargador.load();
         
         Scene scene = new Scene(root, 800, 450);

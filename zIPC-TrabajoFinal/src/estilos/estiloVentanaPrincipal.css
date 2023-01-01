@@ -12,17 +12,18 @@ and open the template in the editor.
     -fx-background-color: linear-gradient(from 25% 25% to 90% 90%, #35f2f2, #bcdd78);
 }
 
-#botonInicioSesion{
-    -fx-background-color: black;
-    -fx-border-color: white;
+.botones{
+    -fx-background-color: white;
+    -fx-border-color: black;
     -fx-border-width: 2px;
     -fx-font-family: Verdana;
     -fx-font-weight: Bold;
 }
 
-#botonRegistrarse{
-    -fx-background-color: white;
-    -fx-border-color: black;
+.botones:hover{
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
     -fx-border-width: 2px;
     -fx-font-family: Verdana;
     -fx-font-weight: Bold;
