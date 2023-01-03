@@ -9,3 +9,5 @@
 
 01/01/2022 -> Creación de registros y de las opciones + creación de la ventana de inicio de sesión.
 
+03/01/2022 -> Añado las librerias necesarias para probar el programa.
+
