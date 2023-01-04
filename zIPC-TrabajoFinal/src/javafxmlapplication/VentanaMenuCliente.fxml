@@ -41,7 +41,11 @@
             </MenuBar>
             <HBox alignment="CENTER_RIGHT" spacing="15.0" styleClass="hboxHeader">
                <children>
-                  <Button id="botonInicioSesion" fx:id="iniciarSesionBoton" mnemonicParsing="false" onAction="#inicioDeSesion" prefHeight="35.0" styleClass="botones" text="Cerrar sesión">
+                  <Button id="botonRegistrarse" fx:id="modificarBoton" mnemonicParsing="false" onAction="#modificar" prefHeight="35.0" styleClass="botones" text="Modificar perfil">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="botonInicioSesion" fx:id="cerrarSesionBoton" mnemonicParsing="false" onAction="#cierreDeSesion" prefHeight="35.0" styleClass="botones" text="Cerrar sesión">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -77,7 +81,7 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                      <children>
-                        <Button id="botonCliente" fx:id="clienteBoton" mnemonicParsing="false" onAction="#cliente" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Añadir productos">
+                        <Button id="botonCliente" fx:id="reservaBoton" mnemonicParsing="false" onAction="#reserva" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Reservar ">
                            <font>
                               <Font name="Verdana" size="12.0" />
                            </font>
@@ -85,7 +89,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button id="botonCliente" fx:id="clienteBoton1" mnemonicParsing="false" onAction="#cliente" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Añadir cesta">
+                        <Button id="botonCliente" fx:id="anularBoton" mnemonicParsing="false" onAction="#anular" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Anular reserva">
                            <font>
                               <Font name="Verdana" size="12.0" />
                            </font>
@@ -93,29 +97,13 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button id="botonCliente" fx:id="clienteBoton2" mnemonicParsing="false" onAction="#cliente" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Anular reserva de cesta">
+                        <Button id="botonCliente" fx:id="visualizarBoton" mnemonicParsing="false" onAction="#visualizar" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Visualizar Reserva">
                            <font>
                               <Font name="Verdana" size="12.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
-                        </Button>
-                        <Button id="botonCliente" fx:id="clienteBoton11" layoutX="40.0" layoutY="137.0" mnemonicParsing="false" onAction="#cliente" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Servir de cestas">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <font>
-                              <Font name="Verdana" size="12.0" />
-                           </font>
-                        </Button>
-                        <Button id="botonCliente" fx:id="clienteBoton21" layoutX="40.0" layoutY="182.0" mnemonicParsing="false" onAction="#cliente" prefHeight="70.0" prefWidth="300.0" styleClass="botones" text="Visualizar reserva de cestas">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                           <font>
-                              <Font name="Verdana" size="12.0" />
-                           </font>
                         </Button>
                      </children>
                   </VBox>
