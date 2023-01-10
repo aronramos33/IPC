@@ -10,9 +10,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.Customer;
 
 
 public class JavaFXMLApplication extends Application {
+    
+    public static Customer clienteLog = null;
     
     @Override
     public void start(Stage stage) throws Exception {

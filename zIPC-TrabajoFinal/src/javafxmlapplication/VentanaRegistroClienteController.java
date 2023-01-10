@@ -5,7 +5,9 @@
  */
 package javafxmlapplication;
 
+import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.property.BooleanProperty;
@@ -19,6 +21,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import model.Market;
+import static model.Market.getSingletonMarket;
+import model.MarketDAOException;
 
 /**
  * FXML Controller class
@@ -81,7 +86,8 @@ public class VentanaRegistroClienteController implements Initializable {
     }
 
     @FXML
-    private void registrar(ActionEvent event) {
+    private void registrar(ActionEvent event) throws MarketDAOException, IOException {
+        JavaFXMLApplication.clienteLog = Market.getSingletonMarket().registerCustomer(nombreUsuario.getText(), "emaill", "password", null, "street", 0, "door", "postalCode", 0, LocalDate.MIN, 0);
     }
     
 }

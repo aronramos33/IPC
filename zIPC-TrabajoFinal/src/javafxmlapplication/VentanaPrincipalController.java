@@ -47,7 +47,8 @@ public class VentanaPrincipalController implements Initializable {
         Parent root = miCargador.load();
         
         Scene scene = new Scene(root, 800, 450);
-        Stage stage = new Stage();
+        Stage stage = (Stage) registrarseBoton.getScene().getWindow();
+//        Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Registrarse");
         stage.initModality(Modality.APPLICATION_MODAL);
