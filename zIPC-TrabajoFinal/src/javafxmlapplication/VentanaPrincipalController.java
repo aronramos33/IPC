@@ -50,7 +50,7 @@ public class VentanaPrincipalController implements Initializable {
         Stage stage = (Stage) registrarseBoton.getScene().getWindow();
 //        Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Registrarse");
+        stage.setTitle("Registrar");
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }
