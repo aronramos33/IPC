@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="450.0" prefWidth="800.0" stylesheets="@../estilos/estiloVentanaPrincipal.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.VentanaPrincipalController">
+<BorderPane prefHeight="450.0" prefWidth="800.0" stylesheets="@../estilos/estiloVentanaPrincipal.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.VentanaPrincipalController">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
@@ -37,11 +37,11 @@
             <HBox alignment="CENTER_RIGHT" spacing="15.0" styleClass="hboxHeader">
                <children>
                   <Label id="labelTop" focusTraversable="false" layoutX="699.0" layoutY="39.0" text="¿No tienes cuenta?" />
-                  <Button id="botonRegistrarse" fx:id="registrarseBoton" mnemonicParsing="false" onAction="#registrarse" prefHeight="35.0" styleClass="botones" text="Registrarse">
+                  <Button fx:id="registrarseBoton" mnemonicParsing="false" onAction="#registrarse" prefHeight="35.0" styleClass="botonRegistrar" text="Registrarse">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button id="botonInicioSesion" fx:id="iniciarSesionBoton" mnemonicParsing="false" onAction="#inicioDeSesion" prefHeight="35.0" styleClass="botones" text="Iniciar Sesión">
+                  <Button id="botonInicioSesion" fx:id="iniciarSesionBoton" mnemonicParsing="false" onAction="#inicioDeSesion" prefHeight="35.0" styleClass="botonInicioSesion" text="Iniciar Sesión">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
