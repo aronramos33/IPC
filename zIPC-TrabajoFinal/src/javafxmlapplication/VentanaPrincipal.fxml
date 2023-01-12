@@ -34,8 +34,19 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <HBox alignment="CENTER_RIGHT" spacing="15.0" styleClass="hboxHeader">
+            <HBox alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="800.0" spacing="15.0" styleClass="hboxHeader">
                <children>
+                  <ImageView fitHeight="70.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@../icons/Logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="200.0" />
+                     </HBox.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
                   <Label id="labelTop" focusTraversable="false" layoutX="699.0" layoutY="39.0" text="¿No tienes cuenta?" />
                   <Button fx:id="registrarseBoton" mnemonicParsing="false" onAction="#registrarse" prefHeight="35.0" styleClass="botonRegistrar" text="Registrarse">
                      <cursor>
@@ -71,24 +82,27 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="450.0" spacing="20.0" GridPane.columnIndex="1">
                      <children>
-                        <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                        <ImageView fitHeight="209.0" fitWidth="405.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../icons/Logo.png" />
+                              <Image url="@../../build/classes/icons/fondo.png" />
                            </image>
                            <HBox.margin>
-                              <Insets left="10.0" />
+                              <Insets left="20.0" />
                            </HBox.margin>
-                           <viewport>
-                              <Rectangle2D />
-                           </viewport>
                         </ImageView>
                         <VBox alignment="CENTER" spacing="20.0">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
                            <children>
-                              <Label alignment="CENTER" focusTraversable="false" lineSpacing="1.5" styleClass="descripcion" text="&quot;La Cistella&quot; es una plataforma que permite a los agricultores vender productos frescos y orgánicos directamente a los clientes y a los clientes comprar productos de productores locales de alta calidad." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
-                              <Label alignment="CENTER" focusTraversable="false" lineSpacing="1.5" styleClass="descripcion" text="Es tu oportunidad, ¿a qué estás esperando? Inicia sesión o registrate y disfruta de nuestro servicio." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+                              <Label alignment="CENTER" focusTraversable="false" lineSpacing="1.5" styleClass="descripcion" text="&quot;La Cistella&quot; es una plataforma que permite a los agricultores vender productos frescos y orgánicos directamente a los clientes y a los clientes comprar productos de productores locales de alta calidad." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin></Label>
+                              <Label alignment="CENTER" focusTraversable="false" lineSpacing="1.5" styleClass="descripcion" text="Es tu oportunidad, ¿a qué estás esperando? Inicia sesión o registrate y disfruta de nuestro servicio." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin></Label>
                            </children>
                         </VBox>
                      </children>

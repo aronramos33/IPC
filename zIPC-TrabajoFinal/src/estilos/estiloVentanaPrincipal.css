@@ -10,6 +10,7 @@ and open the template in the editor.
 
 .hboxHeader{
     -fx-background-color: linear-gradient(from 25% 25% to 90% 90%, #35f2f2, #bcdd78);
+    -fx-border-color: white;
 }
 
 .botones{
@@ -21,14 +22,13 @@ and open the template in the editor.
 }
 
 .botonInicioSesion {
-    -fx-background-color: white;
-    -fx-font-family: Verdana;
+    -fx-background-color:#ccffff;
+    -fx-font-family:Verdana;
     -fx-font-weight: Bold;
 }
 
 .botonRegistrar {
-    -fx-background-color:#cccccc;
-    -fx-border-width: 2px;
+    -fx-background-color:#bcdd78;
     -fx-font-family: Verdana;
     -fx-font-weight: Bold;
 }
@@ -46,6 +46,10 @@ and open the template in the editor.
     -fx-font-family: Verdana;
     -fx-font-weight: Bold;
     -fx-font-size: 17px;
+}
+
+.fondoHbox {
+    -fx-background-color:#ccffcc;
 }
 
 #labelTop{
