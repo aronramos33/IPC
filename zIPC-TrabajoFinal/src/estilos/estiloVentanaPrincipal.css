@@ -25,12 +25,28 @@ and open the template in the editor.
     -fx-background-color:#ccffff;
     -fx-font-family:Verdana;
     -fx-font-weight: Bold;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.botonInicioSesion:hover {
+    -fx-background-color:#668080;
+    -fx-font-family:Verdana;
+    -fx-font-weight: Bold;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
 }
 
 .botonRegistrar {
-    -fx-background-color:#bcdd78;
+    -fx-background-color:transparent;
     -fx-font-family: Verdana;
-    -fx-font-weight: Bold;
+}
+
+.botonRegistrar:hover{
+    -fx-background-color:#91b265;
+    -fx-font-family: Verdana;
+    -fx-text-fill: white;  
 }
 
 .botones:hover{
@@ -54,7 +70,7 @@ and open the template in the editor.
 
 #labelTop{
     -fx-font-family: Verdana;
-    -fx-font-weight: Bold;
+    
 }
 
 

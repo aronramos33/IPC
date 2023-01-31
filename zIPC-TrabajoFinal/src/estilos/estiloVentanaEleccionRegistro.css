@@ -24,21 +24,32 @@ and open the template in the editor.
     -fx-font-weight: Bold;
 }
 
-.botones{
-    -fx-background-color: white;
+.botonesPrincipales {
+    -fx-background-color:#ccffff;
+    -fx-font-family:Verdana;
+    -fx-font-weight: Bold;
     -fx-border-color: black;
     -fx-border-width: 2px;
-    -fx-font-family: Verdana;
-    -fx-font-weight: Bold;
 }
 
-.botones:hover{
-    -fx-background-color: black;
-    -fx-border-color: white;
-    -fx-text-fill: white;
-    -fx-border-width: 2px;
-    -fx-font-family: Verdana;
+.botonesPrincipales:hover {
+    -fx-background-color:#668080;
+    -fx-font-family:Verdana;
     -fx-font-weight: Bold;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.botonCancelar {
+    -fx-background-color:transparent;
+    -fx-font-family: Verdana;
+}
+
+.botonCancelar:hover{
+    -fx-background-color: gray;
+    -fx-font-family: Verdana;
+    -fx-text-fill: white;  
 }
 
 

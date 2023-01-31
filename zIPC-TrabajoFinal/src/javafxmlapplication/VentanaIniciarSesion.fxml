@@ -17,14 +17,14 @@
    <bottom>
       <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id="botonCancelar" fx:id="cancelarBoton" mnemonicParsing="false" onAction="#cancelar" prefHeight="35.0" prefWidth="80.0" styleClass="botones" text="Cancelar">
+            <Button id="botonCancelar" fx:id="cancelarBoton" mnemonicParsing="false" onAction="#cancelar" prefHeight="35.0" prefWidth="80.0" styleClass="botonCancelar" text="Cancelar">
                <HBox.margin>
                   <Insets right="15.0" />
                </HBox.margin>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button fx:id="iniciarSesionBoton" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="35.0" prefWidth="120.0" styleClass="botones" text="Iniciar Sesión">
+            <Button fx:id="iniciarSesionBoton" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="35.0" prefWidth="120.0" styleClass="botonInicioSesion" text="Iniciar Sesión">
                <HBox.margin>
                   <Insets right="15.0" />
                </HBox.margin>
