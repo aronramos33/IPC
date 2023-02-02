@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.VentanaRegistroClienteController">
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cancelarBoton" mnemonicParsing="false" onAction="#cancelar" prefHeight="35.0" prefWidth="80.0" styleClass="botones" text="Cancelar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="registrarBoton" alignment="CENTER" mnemonicParsing="false" onAction="#registrar" prefHeight="35.0" prefWidth="101.0" styleClass="botones" text="Registrar">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox alignment="CENTER" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="292.0" prefWidth="255.0">
+               <children>
+                  <Label id="label2" text="DATOS DE CLIENTE" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Nombre de Usuario" />
+                  <TextField fx:id="nombreUsuario" maxWidth="125.0" promptText="jgarcia" />
+                  <Label fx:id="nombreUsuarioLabel" text="label" visible="false" />
+                  <Label text="Correo Electrónico">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="correoElectronico" promptText="correo@dominio.com" />
+                  <Label fx:id="correoElectronicoLabel" text="Label" visible="false" />
+                  <Label text="Contraseña">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="password" />
+                  <Label fx:id="passwordLabel" text="Label" visible="false" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="284.0" prefWidth="266.0">
+               <children>
+                  <Label id="label1" text="DATOS DE ENTREGA" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Dirección" />
+                  <TextField promptText="C/Avenida de Ejemplo" />
+                  <Label text="Número de la dirección">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="numeroCalle" maxWidth="45.0" promptText="xxx" />
+                  <Label fx:id="numeroCalleLabel" text="Label" visible="false" />
+                  <Label text="Código Postal">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="codigoPostal" maxWidth="50.0" promptText="00000" />
+                  <Label fx:id="codigoPostalLabel" text="Label" visible="false" />
+                  <Label text="Teléfono de contacto">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="telefono" maxWidth="80.0" promptText="000 000 000" />
+                  <Label fx:id="telefonoLabel" text="Label" visible="false" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="284.0" prefWidth="266.0">
+               <children>
+                  <Label id="label3" text="DATOS BANCARIOS" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Número de la tajeta" />
+                  <TextField fx:id="numeroTarjeta" maxWidth="186.0" prefHeight="26.0" prefWidth="186.0" promptText="xxxx xxxx xxxx xxxx" />
+                  <Label fx:id="numeroTarjetaLabel" text="Label" visible="false" />
+                  <Label text="Fecha de Validez">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="fechaValidez" />
+                  <Label text="CVV">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="cvvTarjeta" maxWidth="50.0" promptText="123" />
+                  <Label fx:id="cvvLabel" text="Label" visible="false" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="800.0" styleClass="fondo" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="titulo" text="REGISTRO CLIENTE" />
+         </children>
+      </HBox>
+   </top>
+   <stylesheets>
+      <URL value="@../estilos/estiloVentanaRegistroCliente.css" />
+      <URL value="@../estilos/estiloVentanaRegistroClienteYAgricultor.css" />
+   </stylesheets>
+</BorderPane>
