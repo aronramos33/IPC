@@ -13,14 +13,6 @@ and open the template in the editor.
     -fx-border-color: white;
 }
 
-.botones{
-    -fx-background-color: white;
-    -fx-border-color: black;
-    -fx-border-width: 2px;
-    -fx-font-family: Verdana;
-    -fx-font-weight: Bold;
-}
-
 .botonInicioSesion {
     -fx-background-color:#ccffff;
     -fx-font-family:Verdana;
@@ -49,15 +41,6 @@ and open the template in the editor.
     -fx-text-fill: white;  
 }
 
-.botones:hover{
-    -fx-background-color: black;
-    -fx-border-color: white;
-    -fx-text-fill: white;
-    -fx-border-width: 2px;
-    -fx-font-family: Verdana;
-    -fx-font-weight: Bold;
-}
-
 .descripcion{
     -fx-font-family: Verdana;
     -fx-font-weight: Bold;
@@ -70,7 +53,6 @@ and open the template in the editor.
 
 #labelTop{
     -fx-font-family: Verdana;
-    
 }
 
 

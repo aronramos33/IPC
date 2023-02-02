@@ -13,20 +13,31 @@ and open the template in the editor.
 }
 
 .botones{
-    -fx-background-color: white;
+    -fx-background-color:#ccffff;
+    -fx-font-family:Verdana;
+    -fx-font-weight: Bold;
     -fx-border-color: black;
     -fx-border-width: 2px;
-    -fx-font-family: Verdana;
-    -fx-font-weight: Bold;
 }
 
-.botones:hover{
-    -fx-background-color: black;
-    -fx-border-color: white;
-    -fx-text-fill: white;
-    -fx-border-width: 2px;
-    -fx-font-family: Verdana;
+.botones:hover {
+    -fx-background-color:#668080;
+    -fx-font-family:Verdana;
     -fx-font-weight: Bold;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.botonCancelar {
+    -fx-background-color:transparent;
+    -fx-font-family: Verdana;
+}
+
+.botonCancelar:hover{
+    -fx-background-color:#91b265;
+    -fx-font-family: Verdana;
+    -fx-text-fill: white;  
 }
 
 .descripcion{

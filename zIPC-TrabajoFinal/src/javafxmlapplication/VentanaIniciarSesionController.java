@@ -5,15 +5,22 @@
  */
 package javafxmlapplication;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import model.Market;
+import model.User;
 
 /**
  * FXML Controller class
@@ -45,7 +52,17 @@ public class VentanaIniciarSesionController implements Initializable {
     }
 
     @FXML
-    private void iniciarSesion(ActionEvent event) {
+    private void iniciarSesion(ActionEvent event) throws IOException {
+        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaEleccionInicioDeSesion.fxml"));
+        Parent root = miCargador.load();
+        
+        Scene scene = new Scene(root, 800, 450);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Inicio de Sesión");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
+
     }
     
 }

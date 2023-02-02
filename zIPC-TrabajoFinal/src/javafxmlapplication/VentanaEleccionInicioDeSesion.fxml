@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" stylesheets="@../estilos/estiloVentanaEleccionRegistro.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.VentanaEleccionRegristroController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" stylesheets="@../estilos/estiloVentanaEleccionRegistro.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.VentanaEleccionInicioDeSesionController">
    <bottom>
       <HBox alignment="CENTER_RIGHT" prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -28,7 +28,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="70.0" prefWidth="800.0" styleClass="fondo">
                <children>
-                  <Label id="titulo" text="REGISTRO" />
+                  <Label id="titulo" text="INICIO DE SESIÓN " />
                </children>
             </HBox>
          </children>
@@ -47,6 +47,11 @@
                </cursor>
             </Button>
             <Button id="botonAgricultor" fx:id="agricultorBoton" mnemonicParsing="false" onAction="#agricultor" prefHeight="70.0" prefWidth="300.0" styleClass="botonesPrincipales" text="AGRICULTOR">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="botonAgricultor" fx:id="administrador" layoutX="260.0" layoutY="194.0" mnemonicParsing="false" onAction="#administrador" prefHeight="70.0" prefWidth="300.0" styleClass="botonesPrincipales" text="ADMINISTRADOR">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

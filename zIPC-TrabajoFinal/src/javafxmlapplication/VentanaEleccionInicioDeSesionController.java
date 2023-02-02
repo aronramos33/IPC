@@ -15,7 +15,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.MenuItem;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -24,14 +23,16 @@ import javafx.stage.Stage;
  *
  * @author aronr
  */
-public class VentanaPrincipalController implements Initializable {
+public class VentanaEleccionInicioDeSesionController implements Initializable {
 
     @FXML
-    private MenuItem sobreNosotrosMenu;
+    private Button cancelarBoton;
     @FXML
-    private Button registrarseBoton;
+    private Button clienteBoton;
     @FXML
-    private Button iniciarSesionBoton;
+    private Button agricultorBoton;
+    @FXML
+    private Button administrador;
 
     /**
      * Initializes the controller class.
@@ -42,22 +43,39 @@ public class VentanaPrincipalController implements Initializable {
     }    
 
     @FXML
-    private void registrarse(ActionEvent event) throws IOException {
-        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaEleccionRegistro.fxml"));
+    private void cancelar(ActionEvent event) {
+        ((Stage) cancelarBoton.getScene().getWindow()).close();
+    }
+
+    @FXML
+    private void cliente(ActionEvent event) throws IOException {
+        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaMenuCliente.fxml"));
         Parent root = miCargador.load();
         
         Scene scene = new Scene(root, 800, 450);
         Stage stage = new Stage();
-//        Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Registrar");
+        stage.setTitle("Inicio de Sesión");
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }
 
     @FXML
-    private void inicioDeSesion(ActionEvent event) throws IOException {
-        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaIniciarSesion.fxml"));
+    private void agricultor(ActionEvent event) throws IOException {
+        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaMenuAgricultor.fxml"));
+        Parent root = miCargador.load();
+        
+        Scene scene = new Scene(root, 800, 450);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Inicio de Sesión");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait();
+    }
+
+    @FXML
+    private void administrador(ActionEvent event) throws IOException {
+        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaMenuAdmin.fxml"));
         Parent root = miCargador.load();
         
         Scene scene = new Scene(root, 800, 450);

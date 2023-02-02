@@ -33,11 +33,11 @@
             </MenuBar>
             <HBox alignment="CENTER_RIGHT" spacing="15.0" styleClass="hboxHeader">
                <children>
-                  <Button id="botonRegistrarse" fx:id="modificarBoton" mnemonicParsing="false" onAction="#modificar" prefHeight="35.0" styleClass="botones" text="Modificar perfil">
+                  <Button id="botonIncioDeSesion" fx:id="cerrarSesionBoton" mnemonicParsing="false" onAction="#cierreDeSesion" prefHeight="35.0" styleClass="botonCancelar" text="Cerrar sesión">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
-                  <Button id="botonInicioSesion" fx:id="cerrarSesionBoton" mnemonicParsing="false" onAction="#cierreDeSesion" prefHeight="35.0" styleClass="botones" text="Cerrar sesión">
+                  <Button id="botonRegistrarse" fx:id="modificarBoton" mnemonicParsing="false" onAction="#modificar" prefHeight="35.0" styleClass="botones" text="Modificar perfil">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -59,7 +59,7 @@
                <children>
                   <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                      <image>
-                        <Image url="@../../build/classes/icons/Logo.png" />
+                        <Image url="@../icons/Logo.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="10.0" />
