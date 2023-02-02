@@ -5,19 +5,13 @@
  */
 package javafxmlapplication;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -48,18 +42,7 @@ public class VentanaMenuClienteController implements Initializable {
     }    
 
     @FXML
-    private void modificar(ActionEvent event) throws IOException {
-        FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaModificarPerfil.fxml"));
-        Parent root = miCargador.load();
-        
-        Scene scene = new Scene(root, 800, 450);
-        Stage stage = (Stage) modificarBoton.getScene().getWindow();
-//        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.setTitle("Modificar");
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.showAndWait();
-        
+    private void modificar(ActionEvent event) {
     }
 
     @FXML
