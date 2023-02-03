@@ -43,6 +43,7 @@ public class VentanaPrincipalController implements Initializable {
 
     @FXML
     private void registrarse(ActionEvent event) throws IOException {
+        
         FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaEleccionRegistro.fxml"));
         Parent root = miCargador.load();
         
@@ -57,6 +58,7 @@ public class VentanaPrincipalController implements Initializable {
 
     @FXML
     private void inicioDeSesion(ActionEvent event) throws IOException {
+        
         FXMLLoader miCargador = new FXMLLoader(getClass().getResource("VentanaIniciarSesion.fxml"));
         Parent root = miCargador.load();
         

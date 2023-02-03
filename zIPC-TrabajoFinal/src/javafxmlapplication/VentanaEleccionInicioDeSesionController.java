@@ -55,7 +55,7 @@ public class VentanaEleccionInicioDeSesionController implements Initializable {
         Scene scene = new Scene(root, 800, 450);
         Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Inicio de Sesión");
+        stage.setTitle("Cliente");
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }
@@ -68,7 +68,7 @@ public class VentanaEleccionInicioDeSesionController implements Initializable {
         Scene scene = new Scene(root, 800, 450);
         Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Inicio de Sesión");
+        stage.setTitle("Agricultor");
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }
@@ -81,7 +81,7 @@ public class VentanaEleccionInicioDeSesionController implements Initializable {
         Scene scene = new Scene(root, 800, 450);
         Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Inicio de Sesión");
+        stage.setTitle("Administrador");
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
     }

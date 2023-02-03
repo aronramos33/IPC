@@ -5,12 +5,14 @@
 package javafxmlapplication;
 
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -55,11 +57,14 @@ public class VentanaModificarPerfilController implements Initializable {
 
     @FXML
     private void guardar(ActionEvent event) {
-         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-alert.setTitle("Información");
-alert.setHeaderText("Nueva dirección guardada");
-alert.setContentText("Las cestas se enviarán a la nueva dirección");
-alert.showAndWait();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Información");
+        alert.setHeaderText("Nueva dirección guardada");
+        alert.setContentText("Las cestas se enviarán a la nueva dirección");
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == ButtonType.OK) {
+            ((Stage) password.getScene().getWindow()).close();
+        }
 
     }
     

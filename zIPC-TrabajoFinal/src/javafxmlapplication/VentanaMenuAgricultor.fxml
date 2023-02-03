@@ -51,7 +51,7 @@
    <center>
       <VBox alignment="CENTER" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="450.0" spacing="20.0" VBox.vgrow="ALWAYS">
+            <HBox alignment="CENTER" prefHeight="450.0" spacing="20.0" VBox.vgrow="ALWAYS">
                <children>
                   <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                      <image>

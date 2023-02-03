@@ -47,7 +47,7 @@ public class VentanaIniciarSesionController implements Initializable {
     }    
 
     @FXML
-    private void cancelar(ActionEvent event) {
+    private void cancelar(ActionEvent event) throws IOException {
         ((Stage) iniciarSesionBoton.getScene().getWindow()).close();
     }
 

@@ -72,7 +72,7 @@
                      </VBox.margin>
                   </Label>
                   <Label text="Dirección" />
-                  <TextField maxWidth="300.0" promptText="C/Avenida de Ejemplo" />
+                  <TextField fx:id="direccion" maxWidth="300.0" promptText="C/Avenida de Ejemplo" />
                   <Label text="Número de la dirección">
                      <VBox.margin>
                         <Insets top="15.0" />

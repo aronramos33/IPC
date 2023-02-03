@@ -41,8 +41,9 @@ public class VentanaEleccionRegristroController implements Initializable {
     }    
 
     @FXML
-    private void cancelar(ActionEvent event) {
+    private void cancelar(ActionEvent event) throws IOException {
         ((Stage) clienteBoton.getScene().getWindow()).close();
+
     }
 
     @FXML
